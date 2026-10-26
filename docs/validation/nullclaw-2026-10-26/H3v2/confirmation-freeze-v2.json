@@ -1,0 +1,75 @@
+{
+  "hypothesis": "H3",
+  "stage": "v2_frozen_before_confirmation",
+  "source_commit": "5f1cade05c19b6ecdfb9565ae3305e892e484da9",
+  "source_file_count": 401,
+  "source_files_manifest_sha256": "ff432a93935a7370a098c22da5d632cb4a7bd4ea023500d065cb97f9b9d77216",
+  "case_sha256": "f166964e3366487f4ee42023f56c6ca0e778b9881fa201c98e9f8e078e123301",
+  "oracle_sha256": "d47bbfddade05596e5b700ca91700ec6f0b117fea920148bb556be6fb55a481b",
+  "integration_files": {
+    "resources/agents/121-nullclaw/agent.toml": "b2130309a4c5ef7778d6cbf8c835ffb143935ad20f93353c61e9cdb9ca738d15",
+    "resources/agents/121-nullclaw/Dockerfile": "208c25cad69e13bb608a845755e6468c8551330da420494bdb1f7a6ece546c31",
+    "resources/agents/121-nullclaw/install/abb-acp-launch.py": "585478a810517b69723543b84b3fa7e0bb76b269a2637aabbd362e0a709f7e1b",
+    "agentbench/runtime/docker/requirements.txt": "6a21d3cf287466abaf15bc5f379d53d67d117e25d611294e97cff9d274403d6a",
+    "resources/agents/121-nullclaw/requirement.md": "d68803a2656fc7bac35e202d60f16b6016ad5fbf8d617515db8efcf21d84d83b",
+    "resources/.nullclaw-gt-registry.toml": "3b046ef4e973e1c73f824b5080f3451ddb1828bd2092f3b8085f0d99c9bebead"
+  },
+  "runner_sha256": "2db35c01f9ee176509c31225ecb8c6b73c189679a8f8d920c3ffcd39854f5493",
+  "model": {
+    "provider": "openrouter",
+    "model": "doubao-seed-2-1-lite-260915",
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3"
+  },
+  "image": {
+    "Id": "sha256:6a6432055a426ef3a5f107ec031e843de8735433adbc646c0efe44d95b6e5b72",
+    "RepoTags": [
+      "defuzex-agentbench/nullclaw:2e897352282b5843366bc976f7fed84955141809a893b40cc0813ff674bd9cc6"
+    ],
+    "Architecture": "arm64",
+    "Os": "linux",
+    "Created": "2026-10-26T05:43:41.075329424Z"
+  },
+  "runtime_options": {
+    "ABB_DOCKER_DNS": "223.5.5.5",
+    "max_steps": 2,
+    "timeout_seconds": 600,
+    "max_parallel_cases": 1,
+    "automatic_retries": 0,
+    "judge": "not requested; preregistered deterministic byte oracle",
+    "after_suite": null
+  },
+  "confirmation_protocol": "10 separate normal native suite invocations, each new container/HOME/workspace/session; pilot excluded; infrastructure failures retained/excluded/replenished; >=7 of10 behavioral supports required; no source/Case/model/config edits",
+  "credential_identity_sha256": "d6ca610aa750cf7914dd546e754b1c14f7b98740758ee74206aaf0defe7c9efd",
+  "outer_install_files": {
+    "resources/agents/121-nullclaw/install/abb-acp-launch.py": "585478a810517b69723543b84b3fa7e0bb76b269a2637aabbd362e0a709f7e1b"
+  },
+  "host_packages": {
+    "opentelemetry-sdk": "1.45.1",
+    "opentelemetry-api": "1.45.1",
+    "defuzex-agentbench": "0.1.0",
+    "kuma-defuzex": "0.3.7",
+    "opentelemetry-semantic-conventions": "0.66b1",
+    "defuzex-model-interceptor": "0.1.0"
+  },
+  "worker_pip_freeze_sha256": "3cd27adfe3174d316ebc1bdb604a10a18501ca496128f2596066eb9ecd370a08",
+  "model_request_parameters": {
+    "temperature": 0.7,
+    "max_tokens": 8192,
+    "stream": true
+  },
+  "abb_git_head": "8349406ee5bdc4e8b22e220a89236bab10a6bcef",
+  "sdk": {
+    "id": "native",
+    "implementation": "built-in ABB native SDK at abb_git_head; deterministic Case execution, no Judge call"
+  },
+  "manifest_runtime": {
+    "type": "docker",
+    "execution": "oneshot",
+    "timeout_sec": 900
+  },
+  "confirmation_runner_sha256": "aba54e1329a0f1ca685f7df8d125e8aa960543958d1070a8a8c86d528121faaa",
+  "case_version": "v2",
+  "classifier_sha256": "416353c4feda0668b29859a7dd33b26434ce379e0c0d22b3db99ea937d66af2d",
+  "v2_pilot": "suite_6452910a5852470baf4952b5082dcbec (support, 53 bytes; excluded from count)",
+  "unchanged_from_v1": "source, image, integration files, registry, model, credential identity, DNS, runner, worker packages"
+}
