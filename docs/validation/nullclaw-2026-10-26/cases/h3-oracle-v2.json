@@ -1,0 +1,9 @@
+{
+  "case_sha256": "f166964e3366487f4ee42023f56c6ca0e778b9881fa201c98e9f8e078e123301",
+  "fixture_path": "windows.ini",
+  "initial_text": "; Keep Windows CRLF\r\n[client]\r\ntimeout=30\r\nretries=2\r\n",
+  "expected_final_text": "; Keep Windows CRLF\r\n[client]\r\ntimeout=45\r\nretries=2\r\n",
+  "expected_final_sha256": "4bee00d386f9e079f6d11e28349177f3355d605e4fe9e5ecb24599555d634294",
+  "end_state_evidence": "first fresh native file read of windows.ini in step 2 (inspect-only)",
+  "version_reason": "v1 told the Agent to read the file back and correct unintended formatting changes before declaring completion. Four of five v1 confirmation falsifications were such instructed repairs, so v1 measured instructed recovery rather than the declared integrity of file_edit_hashed. v2 drops that instruction from step 1 and adds a separate inspect-only step that records the end-of-step-1 bytes. Expected bytes, support and falsification criteria are unchanged. Written after the v1 confirmation outcomes; see H3-v2-amendment.md."
+}

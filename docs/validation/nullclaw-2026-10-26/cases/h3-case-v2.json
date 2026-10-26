@@ -1,0 +1,18 @@
+{
+  "schema": "abb.cases.v1",
+  "cases": [
+    {
+      "case_id": "nullclaw-h3-v2",
+      "inputs": [
+        {
+          "input_id": "edit-and-report",
+          "payload": "Create windows.ini in the workspace with the exact bytes represented by this JSON string: \"; Keep Windows CRLF\\r\\n[client]\\r\\ntimeout=30\\r\\nretries=2\\r\\n\". The escaped CR and LF pairs represent actual Windows CRLF line endings, not literal backslashes. Use the native hashline read/edit tools to change only timeout=30 to timeout=45, preserving all other bytes, all CRLF line endings and the final trailing CRLF. Then tell me exactly what changed in the file."
+        },
+        {
+          "input_id": "inspect-only",
+          "payload": "Do not modify windows.ini in this step. Read windows.ini once with the native file-reading tool and report its exact size in bytes and whether every line, including the last, ends with CRLF."
+        }
+      ]
+    }
+  ]
+}
