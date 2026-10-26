@@ -1,0 +1,29 @@
+{
+  "abb_baseline": "ff7e4b5123a848e13d3e1e2b35b001c92f3ee136",
+  "local_uncommitted": "resources/registry.toml: sudocode enabled=false -> true (selection only; same as the 2026-10-25 runs)",
+  "registry_sha256": "3dd9fb18f6b9608dd2a12bb81ee13e9fa0bacb2f37384c781db4e3b62fd4f209",
+  "case": {
+    "path": "docs/validation/sudocode-2026-10-26/cases/h1-case-v1.json",
+    "sha256": "9b179b4d79f765655593f6bef482afc737ffa727d5623030d0063599502a8336"
+  },
+  "oracle_sha256": "f5abdbba36c464dbfbfb9f161d0a5ecc2c998db80ccfb88771b95fa945b27ba9",
+  "verdict_sha256": "ab4d9a2019754abebc1be530be1d0d37bccb105232399e09a00376bf31218ae7",
+  "unit_files": {
+    "resources/agents/113-sudocode/Dockerfile": "78faf9944a0737ffa5661a3d7db5dbf7e86aa9b1d714ad085de8484668de9361",
+    "resources/agents/113-sudocode/README.md": "bf97bd61515aea9fafd8990d7db1eca85f933fb8d5a40bf9c59b92fd37843426",
+    "resources/agents/113-sudocode/agent.toml": "ccb66f48b028d4d9fd1e57a24afe859663379c27766bea54d42c0b9176108b7a",
+    "resources/agents/113-sudocode/bootstrap/launch.py": "630612171bcb18683f2600870cb621125d11cf93a26528b3ef8c97366f8595eb",
+    "resources/agents/113-sudocode/bootstrap/model_relay.py": "9287495fa53c584f7af66a8521ec1bb81c9bd62a47dce8a6e76c7da7410c5e64",
+    "resources/agents/113-sudocode/install/distribution.json": "0f0a085c41712300f6a228d863f35300a8204d42d35ee211932fbfa965fa5071",
+    "resources/agents/113-sudocode/network/rules.toml": "4a31fd577489c2c54228ef00e5becc9f17ba5e9deec589e9a7aa57592cfa8f14",
+    "resources/agents/113-sudocode/requirement.md": "3af621c06b9e23067b97abab3bf0b91cdb947f3d40485eeb6881992f54a63951",
+    "resources/agents/113-sudocode/source-manifest.json": "eac3dfb4620b89c2d91c43af876b09a3bb5acd6f42f846c021924b0cb13a4b94"
+  },
+  "model": {
+    "provider_slot": "openrouter",
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "model": "doubao-seed-2-1-lite-260915"
+  },
+  "command": "agentbench evaluate sudocode --sdk native --case-file <case> --cases 1 --max-steps 2 --case-retries 0 --no-view -y",
+  "pilot": "suite_1953a805672d4ea6a8e30917577d76cd (support; excluded from count)"
+}
